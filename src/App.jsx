@@ -4,8 +4,7 @@ import './App.css'
 import BaristaForm from './Components/BaristaForm.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <div className="tite-container">
       <h1 className="title">On My Grind</h1>
