@@ -1,14 +1,10 @@
 @import"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
 #root {
     max-width: 1280px;
-    margin: 0 auto;
     padding: 2rem;
+    margin: auto;
     text-align: center;
     font-family:Poppins, sans-serif
-}
-
-#root div div div div {
-    max-width: 912px;
 }
 
 .logo {
@@ -58,33 +54,67 @@ li {
     list-style:none
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.carton-image {
+    max-height: 100px;
+}
+
 .container {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
-    position:relative
+    position:relative;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
 }
 
 .mini-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
+    align-items: center;
     margin: 25px;
     padding: 15px;
     border-radius: 15px;
-    box-shadow:0 4px 8px #0003, 0 6px 20px #00000030
+    box-shadow:0 4px 8px #0003, 0 6px 20px #00000030;
+    width: 150px;
+    height: fit-content;
+}
+
+.mini-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.drink-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .mini-header {
     height: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     background-color: #e2c393;
     text-align: center;
     border-radius: 10px;
     width: 93%;
-    margin:0
+    margin:0;
+    min-width: 550px;
 }
 
 #wrong {
@@ -98,9 +128,8 @@ li {
 .answer-space {
     background-color: #e2c393;
     height: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: auto;
+    padding: 10px;
+    width: 115px;
     margin-bottom: 20px;
     border-radius: 15px;
     clear:both
@@ -109,7 +138,8 @@ li {
 li {
     margin: 3px 10%;
     background-color: #fffdd0;
-    border-radius:15px
+    border-radius:15px;
+    width: 100%;
 }
 
 button.newdrink {
@@ -134,12 +164,13 @@ button.newdrink {
 
 .title-container {
     text-align: left;
-    margin-bottom:50px
+    margin-bottom:50px;
 }
 
 .drink-container {
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
+    gap: 20px;
 }
 
 :root {
@@ -215,37 +246,8 @@ button:focus, button:focus-visible {
     }
 }
 
-.container {
+.button-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  margin: auto;
-  position: relative;
-}
-
-.mini-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  margin: 50px;
-  background-color: antiquewhite;
-  padding: 20px;
-}
-
-#correct {
-  background-color: aquamarine;
-}
-
-#wrong {
-  background-color: lightcoral;
-}
-
-.answer-space {
-  background-color: bisque;
-  width: 100px;
-  height: auto;
-}
-
-li {
-  list-style: none;
+  flex-direction: row;
+  gap: 20px;
 }
