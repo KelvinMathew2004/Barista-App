@@ -14,19 +14,6 @@ Whether it's a fan favorite or a discontinued classic, there's always another dr
 
 ---
 
-## 🎯 Goals
-
-By the end of this project, you will be able to:
-
-- Create and manage **React forms** from scratch
-- Use **state variables** to drive interactive interfaces
-- Import and use **external data files**
-- Build **custom components** and pass data through props
-- Use **user inputs** to update the visuals of the app
-- Provide real-time **feedback** based on user interaction
-
----
-
 ## ✅ Features
 
 - 🥤 One drink is displayed at a time
@@ -41,4 +28,10 @@ By the end of this project, you will be able to:
 
 ## 📄 License
 
-This project is for educational use only and inspired by real Starbucks recipes.
+    Copyright [2025] [Kelvin Mathew]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
